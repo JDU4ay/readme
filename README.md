@@ -5,7 +5,7 @@
 1. ### _Mobile phone_ ###
 1. `Previous work experience with time (ordered list)`
  
- ![alt котеечка](2.jpg)
+![котеечка](https://avatanplus.com/files/resources/mid/58aaaa4517a4c15a5aa91de9.png)
 1. As Kanye West said:
 
 > We're living the future so
