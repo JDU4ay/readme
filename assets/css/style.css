@@ -1,37 +1,32 @@
 * {
     margin: none;
 }
-body {
+    h1 h2 h3 h4 h5 h6  {
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
 
+
+body {
+    margin: 0;
     font-family: 'Yeseva One', cursive;
     font-size: 16px;
 }
-p {
-    margin: 0;
+.grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
-h1{
-    margin: 0;
-    padding: 0;
-}
-h2{
-    margin: 0;
-    padding: 0;
-}
-h3{
-    margin: 0;
-    padding: 0;
-}
-h4{
-    margin: 0;
-    padding: 0;
-}
-h5{
-    margin: 0;
-    padding: 0;
-}
-h6{
-    margin: 0;
-    padding: 0;
+
+.Home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/Bg_Home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .header {
     width: 100%;
@@ -66,81 +61,234 @@ h6{
     font-size: 21px;
     color: floralwhite;
 }
-.Home {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../image/Bg_Home.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .Content_Home {
     padding-top: 255px;
     text-align: center;
     color: white;
-    font-size: 120px;
+    font-size: 90px;
 }
-.button_home{
+.button_home {
     font-family: Lato;
     text-decoration: none;
     border: 1px solid white;
-    padding: 10px;
- font-size: 18px;
+    padding: 50px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-size: 18px;
     color: white;
 }
-.Content{
-padding-top: 80px;
-    padding-bottom: 80px;
-    width: 100%;
-    height: 70vh;
-    background-image: url("../image/pattern.png");
-    background-size: cover;
-
-    background-position: center;
-}
 .About {
-    margin: 0;
-    float: left;
-    box-sizing: border-box;
+    background-image: url("../image/pattern.png");
+    width: 100%;
+    height: 80vh;
+    display: grid;
+
+    grid-template-columns:1fr 1fr ;
+    align-self: center;
 }
-.Content_About {
+.content_about {
+    padding-right: 40px;
+
+    align-self: center;
+    justify-self: right;
     text-align: center;
-    padding-left: 470px;
-    padding-top: 110px;
 }
 .header_about {
 
     font-size: 36px;
     color:#cc9900;
 }
-.dish {
-    width: fit-content;
-    float: right;
-    width: 50%;
-    height: 60vh;
-}
-.Dish_about{
-    position: absolute;
-    margin: 0;
-    width: fit-content;
-    text-align: right;
-}
 .text_about {
+
     line-height: 24px;
     font-size:16px;
     font-family: Lato;
 }
-.Content_Reservation {
+.about_img{
+    padding-left: 40px;
+
+    align-self: center;
+    justify-self: left;
+}
+.Ingredient {
+    background-image: url("../image/Bg_Ing.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+
+
+}
+.Content_Ingredient {
+    grid-template-areas:
+            ".c c c c c."
+            ".c c a c c."
+            ".c c c c c.";
+    grid-template-columns:1fr 1fr ;
+
+    align-self: center;
+    justify-self: right;
+
+    width: 570px;
+    height: 557px;
+    grid-area: a ;
+    background-color: rgba(0,0,0,0.7);
+    padding: 80px;
+    text-align: center;
+    margin-right: 215px;
+    margin-bottom: 100px;
+
+}
+.header_ing {
+
+    font-size: 36px;
+    color: white;
+}
+.text_ing {
+
+    line-height: 25px;
+    font-family: Lato;
+    font-size: 16px;
+    color: white;
+}
+.img_ing {
+
+    padding-top: 74px;
+}
+.Menu {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../image/pattern2.png");
+    background-size: cover;
+    background-position: center;
+
+
+}
+.appetiser {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.salad {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.starter {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.main_disher {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+.cont_menu {
+ margin-left: 90px;
+    color: #cc9900;
+    justify-self: center;
+    align-self: center;
+ word-spacing: 300px;
+
+    width: fit-content;
+
+
+
+
+
+}
+.text_menu {
+    align-self: center;
+    justify-self: center;
+    border-top: 1px solid #ddcf9c;
+    margin-left: 90px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 24px;
+
+    width: fit-content;
+}
+.appe {
+
+    padding-left: 90px;
+    color: #cc9900;
+    font-size: 36px;
+}
+.Reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/Bg_Reviews.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Content_Reviews {
+
+    background-color: rgba(0,0,0,0.8);
+    width: 800px;
+    height: 600px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.header_reviews {
+    padding-top: 83px;
+    font-size: 36px;
+    color: white;
+    font-family: 'Yeseva One', cursive;
+ }
+.text_reviews {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 25px;
+    line-height: 45px;
+    color: white;
+}
+.citata_end {
+    font-size: 18px;
+    color: white;
+}
+.citata {
+    font-size: 90px;
+    color: gray;
+    font-family: Georgia;
+}
+.Reservation {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:    1fr 1fr;
+    background-image: url("../image/pattern.png");
+    width: 100%;
+    height: 100vh;
+}
+.img_reserv {
+    align-self: center;
+    justify-self: right;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 .content_res {
-    float: right;
     text-align: center;
-    position: relative;
-    top: 100px;
-    right: 285px;
+    align-self: center;
+    justify-self: left;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 .header_reserv {
     font-size: 36px;
+    font-family: 'Yeseva One', cursive;
     color: #cc9900;
 }
 .text_reserv {
@@ -148,148 +296,15 @@ padding-top: 80px;
     font-size: 16px;
     line-height: 24px;
 }
-.img_reserv {
-    float: left;
-    width: fit-content;
-    position: relative;
-    top: 100px;
-    left: 215px;
-}
-.form {
-    border-top: 3px;
-    border-color: #cc9900;
-}
-.Menu{
-    width: 100%;
-    height: 100vh;
-    background-image: url("../image/pattern2.png");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-
-.appetiser {
-    width: fit-content;
-    position: absolute;
-    float: left;
-    text-align: center;
-}
-.appe {
-
-    text-align: center;
-
-    color: #cc9900;
-}
-.Content_Menu{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-
-}
-.salad {
-position: absolute;
-    float: left;
-
-}
-.starter {
-    position: absolute;
-    float: right;
-    right: 10px;
-}
-.main_disher{
-    position: absolute;
-    float: right;
-    right: 300px;
-
-}
-.cont_menu {
-    color: #cc9900;
-    border: 1px solid #cc9900;
-    width: fit-content;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding-top: 45px;
-    padding-bottom: 15px;
-    word-spacing: 330px;
-
-
-}
-.text_menu {
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 24px;
-    padding-top: 15px;
-    width: fit-content;
-}
-.Ingredient {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../image/Bg_Ingredient.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.Content_Ingredient {
-    position: relative;
-    right: 355px;
-    top: 183px;
-    float: right;
-    text-align: center;
-}
-.header_ing {
-    font-size: 36px;
-    color: white;
-}
-.text_ing {
-    line-height: 24px;
-    font-family: Lato;
-    font-size: 16px;
-    color: white;
-}
-.img_ing{
-    padding-top: 74px;
-}
-.Reviews {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../image/Bg_Reviews.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-.Content_Reviews {
-    position: relative;
-    top: 186px;
-    line-height: 45px;
-
-    text-align: center;
-    color: white;
-
-}
-.header_reviews {
-    font-size: 36px;
-}
-.citata {
-    position: relative;
-    left:30px;
- font-family: Georgia regular;
-    font-size: 96px;
-    color: gray;
-}
-.text_reviews {
-    font-family: 'Gentium Book Basic', serif;
-    font-size: 25px;
-}
-.citata_end {
-    font-family: Lato;
-    font-size: 18px;
+.image {
+    padding-right: 30px;
 }
 .footer {
-    width: 100%;
-    height: 30vh;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
     background-image: url("../image/Bg_Footer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -297,27 +312,24 @@ position: absolute;
 
 }
 .column1 {
-    position: relative;
+
     text-align: center;
-    left: 230px;
-    top: 60px;
+
     float: left;
     color: white;
 
 }
 .column2 {
-    position: relative;
-    left: 500px;
-    top: 60px;
+
+
     float: left;
     color: white;
     text-align: center;
 
 }
 .column3 {
-    position: relative;
-    top: 60px;
-    right: 230px;
+
+
     float: right;
     color: white;
     text-align: center;
@@ -337,10 +349,4 @@ position: absolute;
     font-size: 16px;
     line-height: 24px;
 }
-.fot_open {
 
-}
-.fot_loca {
-
-
-}
