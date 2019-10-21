@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Lambda</title>
@@ -8,35 +8,38 @@
 </head>
 
 <body class="grid">
-<section class="Home">
+<section class="home">
     <header class="header">
-        <div class="div_logo">
+        <div  class="div_logo">
             <h1 class="header_logo" >LAMBDA</h1>
         </div>
         <div class="div_nav">
             <nav>
-                <a class="header_nav" href="">Home</a>
-                <a class="header_nav" href="">About</a>
-                <a class="header_nav" href="">Ingredients</a>
-                <a class="header_nav" href="">Menu</a>
-                <a class="header_nav" href="">Reviews</a>
-                <a class="header_nav" href="">Reservations</a>
+                <a class="header_nav" href="#home">Home</a>
+                <a class="header_nav" href="#About">About</a>
+                <a class="header_nav" href="#Ingredient">Ingredients</a>
+                <a class="header_nav" href="#Menu">Menu</a>
+                <a class="header_nav" href="#Reviews">Reviews</a>
+                <a class="header_nav" href="#Reservation">Reservations</a>
             </nav>
         </div>
 
     </header>
-    <div class="Content_Home">
+    <div class="content_home">
         <p>the right ingredients</p>
         <p>for the right food</p>
-        <p><img src="assets/image/diver1.png"></p>
-        <a class="button_home" href="">BOOK A TABLE</a>
-        <a class="button_home" href="">SEE THE MENU</a>
+        <p>
+            <img src="assets/image/diver1.png"></p>
+        <a class="button_home" href="#Reservation">BOOK A TABLE</a>
+        <a class="button_home" href="#Menu">SEE THE MENU</a>
     </div>
 </section>
-<section class="About">
+<section class="about">
+
     <div class="content_about">
             <h2 class="header_about">
                 Just the right food<br>
+                <a name="About"></a>
                 <img src="assets/image/diver2.png">
             </h2>
 
@@ -55,11 +58,13 @@
 
 
 </section>
-<section class="Ingredient">
-    <div class="Content_Ingredient">
+<section class="ingredient">
+
+    <div class="content_ingredient">
         <div class="block_opacity">
         <h2 class="header_ing">
             Fine ingredients<br>
+            <a name="Ingredient"></a>
             <img src="assets/image/diver3.png">
         </h2>
         <p class="text_ing">
@@ -74,9 +79,11 @@
         </div>
     </div>
 </section>
-<section class="Menu">
-    <div class="appetiser">
+<section class="menu">
+
+    <div class="content_menu">
         <h2 class="appe">Appetiser<br>
+            <a name="Menu"></a>
             <img src="assets/image/diver2.png">
         </h2>
         <h3 class="cont_menu">Tzatsiki $3.99</h3>
@@ -87,7 +94,7 @@
         <p class="text_menu">Pureed eggplant, garlic, green pepper and tomato dip.</p>
     </div>
 
-    <div class="starter">
+    <div class="content_menu">
         <h2 class="appe">Starter<br>
             <img src="assets/image/diver2.png">
         </h2>
@@ -96,7 +103,7 @@
         <h3 class="cont_menu">Spinach_Pie $5.50</h3>
         <p class="text_menu">.Pureed eggplant, garlic, green pepper and tomato dip.</p>
     </div>
-    <div class="salad">
+    <div class="content_menu">
         <h2 class="appe">Salad<br>
             <img src="assets/image/diver2.png">
         </h2>
@@ -107,7 +114,7 @@
         <h3 class="cont_menu">Gusto_Salad $5.25</h3>
         <p class="text_menu">Pureed eggplant, garlic, green pepper and tomato dip.</p>
     </div>
-    <div class="main_disher">
+    <div class="content_menu">
         <h2 class="appe">Main Dishes<br>
             <img src="assets/image/diver2.png">
         </h2>
@@ -120,9 +127,11 @@
     </div>
 
 </section>
-<section class="Reviews">
-    <div class="Content_Reviews">
+<section class="reviews">
+
+    <div class="content_reviews">
         <h2 class="header_reviews">Guest Reviews<br>
+            <a name="Reviews"></a>
             <img src="assets/image/diver3.png">
         </h2>
         <p class="text_reviews"> <b class="citata">“</b>If you’ve been to one of our restaurants, you’ve seen –<br>
@@ -134,8 +143,9 @@
     </p>
     </div>
 </section>
-<section class="Reservation">
+<section class="reservation">
         <div class="img_reserv">
+            <a name="Reservation"></a>
             <img class="image" src="assets/image/img1_reviews.jpg">
             <img src="assets/image/img2_reviews.jpg">
         </div>
@@ -153,53 +163,76 @@
                 materials and freshly baked food.<br>
             </p>
             <form class="form">
-                <input type="text">
-                <input type="text"><br>
-                <input type="date">
-                <input type="text"><br>
-                <input type="submit">
+                <div class="form_megagroup">
+                <div class="form__grou">
+                    <label class="form__label" >Name</label>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="name*">
+                </div>
+                    <label class="form__label">Date</label>
+                <div class="form__group">
+                    <input type="text" class="form__input"  placeholder="date*">
+                </div>
+                </div>
+                <div class="form__gr">
+                    <label class="form__label">Name</label>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="name*">
+                </div>
+                    <label class="form__label">Party Number</label>
+                <div class="form__group">
+                    <input type="text" class="form__input"  placeholder="Party Number*">
+
+                </div>
+                </div>
+                </div>
+
+
+                <div class="div__btn">
+                <button class="form__btn">Book now!</button>
+                </div>
+
             </form>
         </div>
-    <footer class="footer">
-        <div class="column1"> <h2 class="fot_about">
-            About Us<br>
-            <img src="assets/image/diver3.png">
-        </h2>
-            <p class="fot_abcont">
-                Lambda's new and expanded Chelsea location<br>
-                represents a truly authentic <b>Greek</b> patisserie, featuring<br>
-                breakfasts of fresh croissants and steaming bowls of<br>
-                café.<br>
-                Lamda the best restaurant in town<br>
-
-            </p>
-        </div>
-        <div class="column2"> <h2 class="fot_open">
-            Opening Hours<br>
-            <img src="assets/image/diver3.png">
-        </h2>
-            <p class="fot_hour">
-                <b>Mon-Thu</b>: 7:00am-8:00pm<br>
-                <b>Fri-Sun</b>: 7:00am-10:00pm
-
-            </p>
-        </div>
-        <div class="column3"> <h2 class="fot_loca">
-            Our Location <br>
-            <img src="assets/image/diver3.png">
-        </h2>
-            <p class="fot_loc">
-                <b>19th Paradise Street Sitia<br>
-                    128 Meserole Avenue</b>
-
-
-            </p>
-        </div>
-
-    </footer>
-
 
 
 </section>
+<footer class="footer">
+    <div class="column1"> <h2 class="fot_about">
+        About Us<br>
+        <img src="assets/image/diver3.png">
+    </h2>
+        <p class="fot_abcont">
+            Lambda's new and expanded Chelsea location<br>
+            represents a truly authentic <b>Greek</b> patisserie, featuring<br>
+            breakfasts of fresh croissants and steaming bowls of<br>
+            café.<br>
+            Lamda the best restaurant in town<br>
+
+        </p>
+    </div>
+    <div class="column2"> <h2 class="fot_open">
+        Opening Hours<br>
+        <img src="assets/image/diver3.png">
+    </h2>
+        <p class="fot_hour">
+            <b>Mon-Thu</b>: 7:00am-8:00pm<br>
+            <b>Fri-Sun</b>: 7:00am-10:00pm
+
+        </p>
+    </div>
+    <div class="column3"> <h2 class="fot_loca">
+        Our Location <br>
+        <img src="assets/image/diver3.png">
+    </h2>
+        <p class="fot_loc">
+            <b>19th Paradise Street Sitia<br>
+                128 Meserole Avenue</b>
+
+
+        </p>
+    </div>
+
+</footer>
 </body>
 </html>

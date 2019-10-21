@@ -3,6 +3,7 @@
 }
     h1 h2 h3 h4 h5 h6  {
         margin: 0;
+
     }
     p {
         margin: 0;
@@ -20,7 +21,10 @@ body {
     grid-template-columns: 1fr;
 }
 
-.Home {
+.home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     width: 100%;
     height: 100vh;
     background-image: url("../image/Bg_Home.png");
@@ -29,7 +33,11 @@ body {
     background-position: center;
 }
 .header {
+    display: flex;
     width: 100%;
+    align-content: center;
+    justify-content: center;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -37,37 +45,52 @@ body {
     z-index: 100;
 }
 .div_logo {
-    margin-left: 176px;
-    margin-top: 48px;
-    float: left;
+    align-self: flex-start;
+    padding-right: 250px;
+
+
+
 }
 .header_logo {
     opacity: 0.9;
-    width: fit-content;
     font-size:36px;
     color: white;
 }
 .div_nav {
-    margin-right: 300px;
-    margin-top: 57px;
-    float: right;
+justify-self: center;
+
+
 }
 .header_nav {
     opacity: 0.9;
-    text-decoration-line: overline;
+    display: inline-block;
+    text-transform: none;
+    text-decoration: none;
+    padding-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
     width: fit-content;
     font-size: 21px;
     color: floralwhite;
+    border-top: 3px solid transparent;
 }
-.Content_Home {
-    padding-top: 255px;
+.header_nav:hover {
+    border-top: 3px solid white;
+    transition-duration: .2s;
+}
+.content_home {
+    background-image: url("../image/diver1.png");
+    background: no-repeat;
+    padding-top: 200px;
+    align-self: center;
+    justify-self: center;
     text-align: center;
     color: white;
     font-size: 90px;
 }
 .button_home {
+    display: inline-block;
+    text-transform: none;
     font-family: Lato;
     text-decoration: none;
     border: 1px solid white;
@@ -76,8 +99,15 @@ body {
     padding-bottom: 23px;
     font-size: 18px;
     color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+
 }
-.About {
+.button_home:hover {
+    transition-duration: .4s;
+    border: 1px solid black;
+    background-color: rgba(0,0,0,0.3);
+}
+.about {
     background-image: url("../image/pattern.png");
     width: 100%;
     height: 80vh;
@@ -110,7 +140,7 @@ body {
     align-self: center;
     justify-self: left;
 }
-.Ingredient {
+.ingredient {
     background-image: url("../image/Bg_Ing.png");
     width: 100%;
     height: 100vh;
@@ -121,7 +151,7 @@ body {
 
 
 }
-.Content_Ingredient {
+.content_ingredient {
     grid-template-areas:
             ".c c c c c."
             ".c c a c c."
@@ -157,11 +187,11 @@ body {
 
     padding-top: 74px;
 }
-.Menu {
+.menu {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     background-image: url("../image/pattern2.png");
     background-size: cover;
@@ -169,32 +199,23 @@ body {
 
 
 }
-.appetiser {
+.content_menu {
+    display: flex;
+    flex-flow: column wrap;
+
     align-self: center;
     justify-self: center;
     text-align: center;
+    width: fit-content;
+    height: fit-content;
 }
-.salad {
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-}
-.starter {
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-}
-.main_disher {
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-}
+
 .cont_menu {
  margin-left: 90px;
     color: #cc9900;
     justify-self: center;
-    align-self: center;
- word-spacing: 300px;
+    align-self: flex-start;
+
 
     width: fit-content;
 
@@ -204,7 +225,7 @@ body {
 
 }
 .text_menu {
-    align-self: center;
+    align-self: flex-start;
     justify-self: center;
     border-top: 1px solid #ddcf9c;
     margin-left: 90px;
@@ -220,7 +241,7 @@ body {
     color: #cc9900;
     font-size: 36px;
 }
-.Reviews {
+.reviews {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
@@ -230,7 +251,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-.Content_Reviews {
+.content_reviews {
 
     background-color: rgba(0,0,0,0.8);
     width: 800px;
@@ -260,16 +281,17 @@ body {
     color: gray;
     font-family: Georgia;
 }
-.Reservation {
+.reservation {
     display: grid;
     grid-gap: 100px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:    1fr 1fr;
+    grid-template-rows:    1fr;
     background-image: url("../image/pattern.png");
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 .img_reserv {
+
     align-self: center;
     justify-self: right;
     grid-column-start: 1;
@@ -278,8 +300,8 @@ body {
     grid-row-end: 2;
 }
 .content_res {
-    text-align: center;
     align-self: center;
+    text-align: center;
     justify-self: left;
     grid-column-start: 2;
     grid-column-end: 2;
@@ -299,15 +321,75 @@ body {
 .image {
     padding-right: 30px;
 }
-.footer {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
+.form {
+    position: relative;
+    display: flex;
+    align-content: baseline;
+    justify-content: center;
+    text-align: justify;
+    flex-flow: column wrap;
 
+}
+.form_megagroup {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+
+}
+.form__gr {
+text-align: left;
+    margin-left: 20px;
+}
+.form__grou {
+    text-align: right;
+    margin-right: 20px;
+
+}
+.form__group {
+
+
+    justify-self: center;
+
+
+
+}
+.form__input {
+    border-style: none;
+    border: 2px solid #c8c6c6;
+}
+.form__input:focus {
+    outline: none;
+    border: 2px solid #c89f2d;
+}
+.form__label {
+    padding-top: 30px;
+ color: #cc9900;
+}
+.div__btn {
+    padding-top: 80px;
+    text-align: center;
+
+}
+.form__btn {
+    font-family: "Open Sans";
+    font-size: 16px;
+    border: none;
+    width: 200px;
+    height: 36px;
+    background-color: #c9a131;
+    color: white;
+    outline: none;
+
+}
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
     background-image: url("../image/Bg_Footer.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+
     background-position: center;
 
 }
@@ -315,14 +397,14 @@ body {
 
     text-align: center;
 
-    float: left;
+
     color: white;
 
 }
 .column2 {
 
 
-    float: left;
+
     color: white;
     text-align: center;
 
@@ -330,7 +412,7 @@ body {
 .column3 {
 
 
-    float: right;
+
     color: white;
     text-align: center;
 }
